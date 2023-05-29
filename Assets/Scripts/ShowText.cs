@@ -15,7 +15,6 @@ public class ShowText : MonoBehaviour
 
     }
 
-
     void OnTriggerExit2D(Collider2D other)
     {
         text.SetActive(false);
