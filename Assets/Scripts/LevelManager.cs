@@ -1,4 +1,5 @@
 using Cinemachine;
+using TMPro;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
@@ -6,9 +7,12 @@ public class LevelManager : MonoBehaviour
     public static LevelManager instance;
     [SerializeField] private GameObject playerPrefab;
     [SerializeField] public int deathCount = 0;
+    [SerializeField] public int _diamondCount = 0;
     // [SerializeField] private Transform respawnPoint;
     private CinemachineVirtualCamera _cinemachineVirtualCamera;
     private GameObject _respawnPoint;
+    [SerializeField] private TextMeshProUGUI labelDeathCounter;
+    [SerializeField] private TextMeshProUGUI labelDiamondCounter;
 
     
     void Awake()
@@ -34,7 +38,8 @@ public class LevelManager : MonoBehaviour
 
     public void Respawn()
     {
-        Debug.Log("Respawn");
+        // if player exists do not spawn
+        // if(GameObject.FindGameObjectWithTag("Player") != null) return;
         spawn();
         AddDeathCount();
     }
@@ -51,9 +56,14 @@ public class LevelManager : MonoBehaviour
     public void AddDeathCount()
     {
         deathCount++;
-        // labelDeathCounter.text = deathCount.ToString();
+        labelDeathCounter.text = deathCount.ToString();
     }
 
+    public void AddDiamondCount()
+    {
+        _diamondCount++;
+        labelDiamondCounter.text = _diamondCount.ToString();
+    }
     public void GameDone()
     {
         // showPanelComplete = true;

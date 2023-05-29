@@ -15,6 +15,8 @@ public class PickUpDiamond : PlayerInventoryBehaviour
             _inventory.Diamond += _diamond;
             _audioManager.PlayCollectSound();
             Destroy(gameObject);
+            
+            LevelManager.instance.AddDiamondCount();
         }
     }
 }

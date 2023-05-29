@@ -13,11 +13,10 @@ public class DeathTrigger : MonoBehaviour
     }
 
 
-    void OnTriggerEnter2D(Collider2D player)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Player died");
         //get player by tag
-        // GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
         var playerParent = player.gameObject.transform.parent.gameObject;
         _audioManager.PlayDeathSound();
         Destroy(playerParent);

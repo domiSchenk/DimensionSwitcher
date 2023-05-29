@@ -29,7 +29,6 @@ namespace Shinjingi
 
         void FixedUpdate()
         {
-            Debug.Log(_desiredRift);
             if (_desiredRift && _inventory?.HasRift == true && _inventory?.CurrentMarker != null)
             {
                 transform.position = _inventory.CurrentMarker.position;
