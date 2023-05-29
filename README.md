@@ -27,7 +27,6 @@ Use sound or else its going to be hell :-D
 - Interact/Use Rifts: ​E
 ​  
   
-Code can be found here: https://github.com/domiSchenk/DimensionSwitcher  
   
 ​Assets are form https://www.kenney.nl/   
 Controller is from https://github.com/Shinjingi/Unity2D-Platform-Character-Controller but modified   
