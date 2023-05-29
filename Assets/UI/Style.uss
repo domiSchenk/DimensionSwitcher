@@ -1,0 +1,27 @@
+.button-style {
+    height: 60px;
+    width: 151px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    background-color: rgb(159, 0, 0);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: rgb(255, 255, 255);
+    -unity-text-outline-width: 0;
+    font-size: 12px;
+    -unity-font-definition: url('project://database/Assets/UI/PressStart2P.asset?fileID=11400000&guid=60f384b7340eac04ca4cbcc0fb599d10&type=2#PressStart2P');
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    background-image: url('project://database/Assets/Sprites/Background/background_0004.png?fileID=2800000&guid=b66675dd4b3861b47b63916bfb687b65&type=3#background_0004');
+    -unity-font-style: normal;
+}
+
+.button-style:active {
+    font-size: 8px;
+}

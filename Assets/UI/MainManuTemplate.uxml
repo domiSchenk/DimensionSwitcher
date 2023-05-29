@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Style.uss?fileID=7433441132597879392&amp;guid=c1b63f2690779854f955e420b210e803&amp;type=3#Style" />
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(0, 0, 0); align-items: center; justify-content: center; font-size: 20px; -unity-font: none; -unity-font-definition: url(&apos;project://database/Assets/UI/Minimal5x7%20SDF.asset?fileID=11400000&amp;guid=5687db477737ab141b2d2a0a989fbed2&amp;type=2#Minimal5x7 SDF&apos;); padding-top: 0; padding-bottom: 5px;">
+        <ui:VisualElement style="height: 264px; width: 340px; background-color: rgb(255, 255, 255); border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; align-items: center; justify-content: center; -unity-font: url(&apos;project://database/Assets/UI/Minimal5x5Monospaced.ttf?fileID=12800000&amp;guid=649be228bbf9c2a47bf76990c0e4bce2&amp;type=3#Minimal5x5Monospaced&apos;);">
+            <ui:Label text="Dimension Switcher" display-tooltip-when-elided="true" name="DimensionSwitcher" style="position: absolute; top: 20px; font-size: 16px; -unity-font-definition: url(&apos;project://database/Assets/UI/PressStart2P.asset?fileID=11400000&amp;guid=60f384b7340eac04ca4cbcc0fb599d10&amp;type=2#PressStart2P&apos;); -unity-text-align: middle-center; width: 100%; left: 1px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 5px; padding-bottom: 5px; color: rgba(0, 0, 0, 255); -unity-font-style: normal;" />
+            <ui:Button text="Start Game" name="Start" class="button-style" />
+            <ui:Button text="Button" class="Style button-style" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
